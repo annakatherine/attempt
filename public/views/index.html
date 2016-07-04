@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <link rel="stylesheet" href="scripts/stylesheet.css" media="screen" title="no title" charset="utf-8">
+    <meta charset="utf-8">
+    <script type="text/javascript" src="vendors/angular.js"></script>
+    <script type="text/javascript" src="vendors/angular-route.min.js"></script>
+    <script type="text/javascript" src="scripts/client.js"></script>
+    <script type="text/javascript" src="scripts/controllers/success.js"></script>
+    <script type="text/javascript" src="scripts/controllers/failure.js"></script>
+    <script type="text/javascript" src="scripts/controllers/signUp.js"></script>
+    <script type="text/javascript" src="scripts/controllers/logIn.js"></script>
+    <title> Employ Me </title>
+  </head>
+  <body>
+    <div ng-controller="indexController">
+    <h1>Welcome to Prime Time</h1>
+    <div class="login" >
+        <form action="/" id="formId" method="post">
+            <div>
+              <label for="username"> Username </label>
+              <input type="text" name="username" id="username">
+            </div>
+            <div>
+              <label for="password">Password:</label>
+              <input type="password" name="password" id="password">
+            </div>
+            <div id='logIn'>
+              <input type="submit" value="Log In">
+            </div>
+            <div id='signUp'>
+              <!-- <input type="button" name="name" value="sign up"> -->
+              <button type="button" name="button"><a href= "/signUp" > sign up </a></button>
+            </div>
+            <div id='logOut'>
+              <button type="button" name="button"><a href= "/logOut" > Log Out </a></button>
+            </div>
+            </div>
+          </form>
+        </div>
+<!-- vvvvvend of testControllervvvvvvv -->
+      </div>
+<main ng-view>
+</main>
+  </body>
+</html>
