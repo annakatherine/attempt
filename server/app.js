@@ -19,10 +19,10 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static( 'public' ));
 
 // include the routes to the modules
-var signUp = require( '../routes/signUp');
-var index = require('../routes/index');
-var failure = require('../routes/failure');
-var success = require('../routes/success');
+var signUp = require( './routes/signUp');
+var index = require('./routes/index');
+// var failure = require('./routes/failure');
+// var success = require('./routes/success');
 
 //passport session initialized
 app.use(passport.initialize());
@@ -31,8 +31,8 @@ app.use(passport.session());
 /// call the routes!
 app.use('/signUp', signUp);
 app.use('/*', index);
-app.use('/success', success);
-app.use('/failure', failure);
+// app.use('/success', success);
+// app.use('/failure', failure);
 
 //passport session specifics
 app.use(session({

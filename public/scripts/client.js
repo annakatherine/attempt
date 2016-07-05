@@ -12,13 +12,13 @@ myApp.config(['$routeProvider', function ($routeProvider) {
    .when('/index', {
      templateUrl: '/views/index.html',
      controller: "indexController"
-   })
-   .when('/failure', {
-     templateUrl: '/views/failure.html',
-     controller: "failureController"
-   })
-   .when('/success', {
-     templateUrl: '/views/success.html',
-     controller: "successController"
    });
+  //  .when('/failure', {
+  //    templateUrl: '/views/failure.html',
+  //    controller: "failureController"
+  //  })
+  //  .when('/success', {
+  //    templateUrl: '/views/success.html',
+  //    controller: "successController"
+  //  });
  }]);//end of myapp confug

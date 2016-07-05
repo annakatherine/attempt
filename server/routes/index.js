@@ -10,8 +10,10 @@ router.post('/',
 );
 
 router.get('/', function(req, res) {
-  res.sendFile(path.resolve('public/views/index.html'));
+  console.log( 'hit router.get in index.js' );
+  res.sendFile( path.resolve( 'public/views/index.html' ) );
 });
-
-
+// public/views/index.html
+// public/views/index.html
+// public/views/index.html
 module.exports = router;
